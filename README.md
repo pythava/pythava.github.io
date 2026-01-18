@@ -21,7 +21,7 @@
   <!--JavaScript-->
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/>
   <!--C-->
-  <img src="https://img.shields.io/badge/<img src=c-#A8B9CC?style=flat-square&logo=c&logoColor=white"/>
+  <img src="https://img.shields.io/badge/<img src=C-#A8B9CC?style=flat-square&logo=C&logoColor=white"/>
   
   <br/>
   
