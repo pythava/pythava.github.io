@@ -43,7 +43,7 @@
   <br/>
   
   ## 🏁MY_log
-  ### : preparing to Dreamhackinvitional 2026
+  ### 🥇 preparing to Dreamhackinvitional 2026
   
 </div>
 
