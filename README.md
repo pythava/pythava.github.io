@@ -42,8 +42,8 @@
   <br/>
   <br/>
   
-  ## 🤔 Github Stats
-  ### :sweat_smile: nothing
+  ## 🏁MY_log
+  ### : preparing to Dreamhackinvitional 2026
   
 </div>
 
