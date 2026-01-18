@@ -20,8 +20,10 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
   <!--JavaScript-->
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/>
-  <!--assembly-->
-  <img src="https://img.shields.io/badge/assemblyscript-#007ACC?style=flat-square&logo=assemblyscript&logoColor=white"/>
+  <!--Assembly-->
+  <img src="https://img.shields.io/badge/Assembly-000000?style=for-the-badge&logo=assemblyscript&logoColor=white">
+  <!--C-->
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white">
   <br/>
   
   ### Library
