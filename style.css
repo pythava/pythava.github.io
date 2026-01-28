@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    height: 60px;
+    background-color: #222;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+.auth a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.auth a:hover {
+    text-decoration: underline;
+    color: #ffcc00
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.nav a:hover{
+    text-decoration: wavy;
+    color:aqua
+}
+
+.content {
+    padding: 40px;
+}
