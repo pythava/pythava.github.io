@@ -14,7 +14,7 @@ function nextSlide() {
 }
 
 // 3초마다 "한 칸 이동 후 정지" 반복
-let timer = setInterval(nextSlide, 3000);
+let timer = setInterval(nextSlide, 1500);
 
 // 마우스 올리면 멈추는 센스 (구경하기 편하게)
 const sliderContainer = document.querySelector('.slider');
