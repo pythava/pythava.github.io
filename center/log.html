@@ -23,7 +23,9 @@
     </nav>
 
     <div class="auth">
-         <a href="/account/sign_in/sign_in.html">sign in</a> | <a href="/account/sign_out/sign_out.html">sign out</a>
+         <span id="guest"><a href="account/sign_in/sign_in.html">sign in</a> | <a href="/account/sign_out/sign_out.html">sign out</a></span>
+
+         <span id="user" style="display:none;">Hello, <span id="usernameDisplay"></span> | <a href="/acount/home">sign out</a></span>
     </div>
 </header>
 
