@@ -1,36 +1,35 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const loginForm = document.getElementById("loginForm");
-    const errorMessage = document.getElementById("errorMessage");
+// 1. 가짜 사용자 데이터 (JSON 형태)
+const userData = [
+    { "username": "admin", "password": "password123", "nickname": "Pythava_Boss" },
+    { "username": "guest", "password": "guest123", "nickname": "CyberTraveler" }
+];
 
-    // 테스트용 계정 데이터 (JS 변수)
-    const users = [
-        { username: "user1", password: "1234" },
-        { username: "user2", password: "abcd" },
-        { username: "test", password: "test123" }
-    ];
+const loginForm = document.getElementById('loginForm');
 
-    // 이미 로그인 되어 있으면 index.html로 이동
-    const currentUser = localStorage.getItem("username");
-    if(currentUser){
-        window.location.href = "/account/home.html";
-        return; // 아래 코드 실행 방지
+loginForm.addEventListener('submit', function(e) {
+    e.preventDefault(); // 폼 제출 시 페이지 새로고침 방지
+
+    const idInput = document.getElementById('userId').value;
+    const pwInput = document.getElementById('userPw').value;
+
+    // 2. 로그인 로직
+    const user = userData.find(u => u.username === idInput && u.password === pwInput);
+
+    if (user) {
+        // 로그인 성공
+        alert(`[ACCESS GRANTED] 반가워요, ${user.nickname}님!`);
+        
+        // 세션/로컬스토리지에 로그인 정보 저장 (실제 서비스 흉내)
+        localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('currentUser', user.nickname);
+        
+        // 메인 페이지로 이동
+        window.location.href = "../../index.html"; 
+    } else {
+        // 로그인 실패
+        alert("[ACCESS DENIED] 아이디 또는 비밀번호가 틀렸습니다.");
+        
+        // 실패 시 입력창 흔들리는 효과나 초기화 추가 가능
+        document.getElementById('userPw').value = "";
     }
-
-    loginForm.addEventListener("submit", function(e){
-        e.preventDefault(); // 폼 기본 제출 막기
-
-        const inputUsername = document.getElementById("username").value.trim();
-        const inputPassword = document.getElementById("password").value.trim();
-
-        // 입력한 계정 확인
-        const user = users.find(u => u.username === inputUsername && u.password === inputPassword);
-
-        if(user){
-            localStorage.setItem("username", inputUsername); // 로그인 상태 저장
-            alert("로그인 성공!");
-            window.location.href = "/account/home.html"; // 로그인 성공 시 이동
-        } else {
-            errorMessage.textContent = "아이디 또는 비밀번호가 틀렸습니다.";
-        }
-    });
 });
