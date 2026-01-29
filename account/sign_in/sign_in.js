@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 이미 로그인 되어 있으면 index.html로 이동
     const currentUser = localStorage.getItem("username");
     if(currentUser){
-        window.location.href = "/index.html";
+        window.location.href = "/account/home";
         return; // 아래 코드 실행 방지
     }
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if(user){
             localStorage.setItem("username", inputUsername); // 로그인 상태 저장
             alert("로그인 성공!");
-            window.location.href = "/account/sign_in/home"; // 로그인 성공 시 이동
+            window.location.href = "/account/home"; // 로그인 성공 시 이동
         } else {
             errorMessage.textContent = "아이디 또는 비밀번호가 틀렸습니다.";
         }
