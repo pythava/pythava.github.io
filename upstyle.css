@@ -46,7 +46,7 @@
 .auth {
     margin-left: auto; /* 오른쪽으로 밀기 */
     display: flex;
-    gap: 5px;
+    /* gap: 10px; */
 }
 .auth a {
     color: white;
