@@ -1,1 +1,84 @@
+/* ===== 홈 섹션 스타일 ===== */
+.home {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background: #111;
+    text-align: center;
+}
 
+/* 슬라이드 영역 */
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 1 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide1 { background: #ff6b6b; }
+.slide2 { background: #6bffb3; }
+.slide3 { background: #6b8cff; }
+.slide4 { background: #ffb36b; }
+.slide5 { background: #b36bff; }
+
+/* 메뉴 버튼 */
+.menu-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-buttons a {
+    padding: 12px 25px;
+    background: #fff;
+    color: #111;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.menu-buttons a:hover {
+    background: #ff4081;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* 텍스트 영역 */
+.home h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+.home p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
