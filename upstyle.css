@@ -62,4 +62,5 @@ body {
     margin: 0;
     padding-top: 60px; /* 헤더 높이만큼 */
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
