@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    padding-top: 60px; /* 헤더 높이만큼 여백 추가 */
 }
 
 .header {
@@ -13,6 +14,12 @@ body {
     justify-content: space-between;
 
     padding: 0 30px;
+
+    position: fixed; /* 화면 상단 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 다른 요소보다 위 */
 }
 
 .auth a{
@@ -22,7 +29,7 @@ body {
 }
 .auth a:hover {
     text-decoration: underline;
-    color: #ffcc00
+    color: #ffcc00;
 }
 
 .logo {
@@ -35,8 +42,8 @@ body {
     margin-left: 20px;
 }
 .nav a:hover{
-    text-decoration: wavy;
-    color:aqua
+    text-decoration: underline; /* wavy는 브라우저 지원 제한 */
+    color: aqua;
 }
 
 .content {
