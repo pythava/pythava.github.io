@@ -20,6 +20,7 @@ loginForm.addEventListener("submit", function(e){
     if(user){
         alert("로그인 성공!");
         window.location.href = "/index.html"; // 로그인 성공 시 이동
+        localStorage.setItem("username", username);
     } else {
         errorMessage.textContent = "아이디 또는 비밀번호가 틀렸습니다.";
     }
