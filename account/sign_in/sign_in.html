@@ -4,44 +4,50 @@
     <link rel="icon" type="image/png" href="https://github.com/user-attachments/assets/017bf2c8-da02-49ef-bd2d-4bd933878bc9">
     <meta charset="UTF-8">
     <title>Pythava - Sign In</title>
-    <link rel="stylesheet" href="/upstyle.css"> <link rel="stylesheet" href="/account/sign_in/style.css">  </head>
+    <link rel="stylesheet" href="/upstyle.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
 
 <body>
 <header class="header">
     <h1 class="logo">
         <a href="/index.html">Pythava</a>
     </h1>
+
     <nav class="nav">
-        <a href="../../center/wargame.html">wargame</a>
-        <a href="../../center/write.html">comunity</a>
-        <a href="../../center/chat.html">Chat</a>
-        <a href="../../center/log.html">Log</a>
+        <a href="/center/wargame.html">wargame</a>
+        <a href="/center/write.html">community</a>
+        <a href="/center/chat.html">Chat</a>
+        <a href="/center/log.html">Log</a>
     </nav>
+
     <div class="auth">
         <span id="guest"><a href="/account/sign_in/sign_in.html">sign in</a> | <a href="/account/sign_out/sign_out.html">sign out</a></span>
-        <span id="user" style="display:none;">Hello, <span id="usernameDisplay"></span> | <a href="/account/home.html">sign out</a></span>
+        <span id="user" style="display:none;">Hello, <span id="usernameDisplay"></span> | <a href="/account/home">sign out</a></span>
     </div>
 </header>
 
-<section class="login-screen">
-    <div class="login-box">
-        <div class="system-label">SYSTEM ACCESS v1.0</div>
-        <h2 class="glitch-text">AUTHENTICATION</h2>
-        
+<section class="auth-section">
+    <div class="auth-card">
+        <div class="auth-header">
+            <h2>Sign In</h2>
+            <p>Pythava 시스템에 접속하세요</p>
+        </div>
+
         <form id="loginForm">
-            <div class="input-field">
+            <div class="input-box">
                 <input type="text" id="userId" required>
-                <label>IDENTIFIER</label>
+                <label>Username</label>
             </div>
-            <div class="input-field">
+            <div class="input-box">
                 <input type="password" id="userPw" required>
-                <label>ACCESS_CODE</label>
+                <label>Password</label>
             </div>
-            <button type="submit" class="access-btn">CONNECT</button>
+            <button type="submit" class="auth-btn">접속하기</button>
         </form>
-        
-        <div class="box-footer">
-            <span>SECURE CONNECTION ESTABLISHED</span>
+
+        <div class="auth-footer">
+            <p>계정이 없으신가요? <a href="#">회원가입</a></p>
         </div>
     </div>
 </section>
