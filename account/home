@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="icon" type="image/png" href="https://github.com/user-attachments/assets/017bf2c8-da02-49ef-bd2d-4bd933878bc9">
+    <meta charset="UTF-8">
+    <title>pythava.kr</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
 
+<body>
+    <header class="header">
+        <h1 class="logo">Pythava</h1>
+
+        <nav class="nav">
+            <a href="center/wargame.html">wargame</a>
+            <a href="center/write.html">write</a>
+            <a href="center/chat.html">Chat</a>
+            <a href="center/contents.html">Contents</a>
+            <a href="center/log.html">Log</a>
+        </nav>
+
+        <div class="auth">
+            <a href="account/sign_in/sign_in.html">sign in</a> | <a href="/account/sign_out/sign_out.html">sign out</a>
+        </div>
+
+    </header>
+
+
+    <section class="home">
+      <h1>this is stemplete</h1>
+    </section>
+</body>
+</html>
