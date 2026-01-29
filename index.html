@@ -9,36 +9,55 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="logo">
-            <a href="/index.html">Pythava</a>
-        </h1>
+<header class="header">
+    <h1 class="logo">
+        <a href="/index.html">Pythava</a>
+    </h1>
 
-        <nav class="nav">
-            <a href="center/wargame.html">wargame</a>
-            <a href="center/write.html">write</a>
-            <a href="center/chat.html">Chat</a>
-            <a href="center/contents.html">Contents</a>
-            <a href="center/log.html">Log</a>
-        </nav>
+    <nav class="nav">
+        <a href="center/wargame.html">wargame</a>
+        <a href="center/write.html">write</a>
+        <a href="center/chat.html">Chat</a>
+        <a href="center/contents.html">Contents</a>
+        <a href="center/log.html">Log</a>
+    </nav>
 
-        <div class="auth">
-            <span id="guest"><a href="/account/sign_in/sign_in.html">sign in</a> | <a href="/account/sign_out/sign_out.html">sign out</a></span>
+    <div class="auth">
+        <span id="guest"><a href="/account/sign_in/sign_in.html">sign in</a> | <a href="/account/sign_out/sign_out.html">sign out</a></span>
 
-            <span id="user" style="display:none;">Hello, <span id="usernameDisplay"></span> | <a href="/acount/home">sign out</a></span>
+        <span id="user" style="display:none;">Hello, <span id="usernameDisplay"></span> | <a href="/acount/home">sign out</a></span>
+    </div>
+</header>
+
+<section class="home">
+    <!-- 슬라이드 영역 -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide slide1">슬라이드 1</div>
+            <div class="slide slide2">슬라이드 2</div>
+            <div class="slide slide3">슬라이드 3</div>
+            <div class="slide slide4">슬라이드 4</div>
+            <div class="slide slide5">슬라이드 5</div>
         </div>
+    </div>
 
-    </header>
+    <!-- 텍스트 영역 -->
+    <h1>안녕하세요</h1>
+    <hr>
+    <p>이 페이지는 개발중입니다</p>
+    <p>- Pythava -</p>
 
+    <!-- 메뉴 버튼 -->
+    <div class="menu-buttons">
+        <a href="center/wargame.html">wargame</a>
+        <a href="center/write.html">write</a>
+        <a href="center/chat.html">chat</a>
+        <a href="center/contents.html">contents</a>
+        <a href="center/log.html">log</a>
+    </div>
+</section>
 
-    <section class="home">
-        <h1> 안녕하세요 </h1>
-        <hr>
-        <p> 이 페이지는 개발중입니다</p>
-        <p> - pythava - </p>
-    </section>
-    <!-- 유저 정보 저장하는 용도의 script -->
-    <script src="/session.js"></script>
-
+<script src="/session.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
