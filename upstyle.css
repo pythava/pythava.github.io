@@ -1,9 +1,3 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    padding-top: 60px; /* 헤더 높이만큼 여백 추가 */
-}
-
 .header {
     height: 60px;
     background-color: #222;
@@ -11,56 +5,45 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: flex-start; /* 자동 공간분배 대신 왼쪽 정렬 */
     padding: 0 30px;
-
-    position: fixed; /* 화면 상단 고정 */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* 다른 요소보다 위 */
-}
-
-.auth a{
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;
-}
-.auth a:hover {
-    text-decoration: underline;
-    color: #ffcc00;
+    z-index: 1000;
 }
 
 .logo {
     font-size: 20px;
+    margin-right: 50px; /* 메뉴와 로고 사이 고정 간격 */
+    white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
 }
 
-/* 로고 링크 스타일 */
-.logo a {
-    color: white;            /* 글자 색 */
-    text-decoration: none;   /* 밑줄 제거 */
-    cursor: pointer;         /* 마우스 포인터 표시 */
-    display: inline-block;   /* 클릭 범위 확보 */
-    font-size: 20px;         /* 글자 크기 */
-    font-weight: bold;
-}
-
-.logo a:hover {
-    color: #ffcc00;          /* 호버 시 색상 */
-    text-decoration: underline; /* 밑줄 표시 */
+.nav {
+    display: flex;
+    flex-grow: 1; /* 가능한 공간 확보 */
 }
 
 .nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
-}
-.nav a:hover{
-    text-decoration: underline; /* wavy는 브라우저 지원 제한 */
-    color: aqua;
+    margin-right: 20px; /* 메뉴 간 간격 고정 */
+    white-space: nowrap; /* 글자가 길어져도 줄 바꿈 안됨 */
 }
 
-.content {
-    padding: 40px;
+.auth {
+    display: flex;
+    gap: 10px; /* 로그인/로그아웃 사이 간격 고정 */
+    white-space: nowrap;
+}
+
+.auth a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
 }
