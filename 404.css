@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    background-color: #0a0a0c;
+    background-image: radial-gradient(circle, #1a1a2e 0%, #050505 100%);
+    color: #ff4d4d; /* 에러니까 레드 계열 */
+    font-family: 'Consolas', monospace;
+    overflow: hidden;
+}
+
+.error-container {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.error-code {
+    font-size: 10rem;
+    margin: 0;
+    color: #ff4d4d;
+    text-shadow: 5px 5px 0px #5f0000;
+    animation: glitch 1s infinite;
+}
+
+.error-msg {
+    background: rgba(255, 0, 0, 0.05);
+    padding: 20px;
+    border: 1px solid #5f0000;
+    margin-bottom: 30px;
+    text-align: left;
+    display: inline-block;
+}
+
+.status-line {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #ff4d4d;
+    animation: typing 2s steps(40, end), blink 0.5s step-end infinite;
+}
+
+.back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.back-home:hover {
+    background: #ff4d4d;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 77, 77, 0.6);
+}
+
+/* 애니메이션 */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #ff4d4d; }
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-3px, 3px); }
+    40% { transform: translate(-3px, -3px); }
+    60% { transform: translate(3px, 3px); }
+    80% { transform: translate(3px, -3px); }
+    100% { transform: translate(0); }
+}
