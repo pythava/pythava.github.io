@@ -1,17 +1,61 @@
-const loginForm = document.getElementById('loginForm');
-const errorMessage = document.getElementById('errorMessage');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-loginForm.addEventListener('submit', function(e) {
-    e.preventDefault(); // 폼 제출 시 새로고침 방지
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
 
-    const username = document.getElementById('username').value.trim();
-    const password = document.getElementById('password').value.trim();
+.login-container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 300px;
+}
 
-    if (username === "" || password === "") {
-        errorMessage.textContent = "아이디와 비밀번호를 모두 입력해주세요.";
-    } else {
-        errorMessage.textContent = "";
-        alert(`로그인 시도:\n아이디: ${username}\n비밀번호: ${password}`);
-        // 서버가 없으므로 여기서 알림만 보여줌
-    }
-});
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
