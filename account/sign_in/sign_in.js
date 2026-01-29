@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if(user){
             localStorage.setItem("username", inputUsername); // 로그인 상태 저장
             alert("로그인 성공!");
-            window.location.href = "/index.html"; // 로그인 성공 시 이동
+            window.location.href = "/account/sign_in/home"; // 로그인 성공 시 이동
         } else {
             errorMessage.textContent = "아이디 또는 비밀번호가 틀렸습니다.";
         }
