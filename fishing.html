@@ -1,22 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>입금 완료!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="1000만원이 입급됬습니다"> <meta property="og:description" content="1000만원"> <meta property="og:image" content="https://your-image-url.com/preview.jpg"> <meta property="og:url" content="https://your-website.com">
+    
+    <title>1000만원이 입금됬습니다</title>
+
     <style>
-        body { text-align: center; font-family: sans-serif; background-color: #ffeb3b; padding-top: 50px; }
-        .money-icon { font-size: 100px; }
-        h1 { color: #3c3c3c; }
-        .troll { font-size: 50px; font-weight: bold; color: red; margin-top: 20px; }
-        img { width: 80%; max-width: 400px; border-radius: 20px; }
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Pretendard', sans-serif;
+        }
+
+        /* 무지개 그라데이션 애니메이션 배경 */
+        .rainbow-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* 무지개 색상 조합 */
+            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+            background-size: 1800% 1800%;
+            
+            /* 배경이 흐르듯 움직이게 만드는 애니메이션 */
+            animation: rainbowAnimation 15s ease infinite;
+            z-index: -1;
+        }
+
+        @keyframes rainbowAnimation {
+            0% { background-position: 0% 82% }
+            50% { background-position: 100% 19% }
+            100% { background-position: 0% 82% }
+        }
+
+        /* 콘텐츠 스타일 */
+        .content {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px); /* 배경 비침 효과 */
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            color: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
     </style>
 </head>
 <body>
-    <div class="money-icon">💸</div>
-    <h1>10,000원 입금 확인</h1>
-    <hr>
-    <p class="troll">응~ 속았지? ㅋㅋㅋㅋ</p>
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJndzRxeHpxZnd4Znd4Znd4Znd4Znd4Znd4Znd4Znd4Znd4Znd4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/Ju7l5y9osyymQ/giphy.gif" alt="Rickroll">
-    <p>생일 축하해~~? <br> 헝허허허ㅓㅎ어허어허어허</p>
+
+    <div class="rainbow-bg"></div>
+
+    <div class="content">
+        <h1>생일 축하해</h1>
+        <p>허헣어허허허허어헣ㅎ허헣.</p>
+    </div>
+
 </body>
 </html>
